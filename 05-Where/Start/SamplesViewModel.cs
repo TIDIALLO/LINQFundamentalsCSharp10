@@ -81,7 +81,7 @@
       List<Product> list = new();
 
       // Write Query Syntax Here
-
+      list =(from p in products select p).ByColor("Red").ToList();
       return list;
     }
     #endregion
@@ -96,7 +96,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-
+      list = products.ByColor("Red").ToList();
 
       return list;
     }
