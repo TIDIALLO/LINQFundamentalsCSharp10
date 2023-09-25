@@ -1,0 +1,12 @@
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\bin\Debug\net6.0\LINQSamples.DataLayer.deps.json
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\bin\Debug\net6.0\LINQSamples.DataLayer.dll
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\bin\Debug\net6.0\LINQSamples.DataLayer.pdb
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.csproj.AssemblyReference.cache
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.AssemblyInfoInputs.cache
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.AssemblyInfo.cs
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.csproj.CoreCompileInputs.cache
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.dll
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\refint\LINQSamples.DataLayer.dll
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.pdb
+D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.DataLayer\obj\Debug\net6.0\ref\LINQSamples.DataLayer.dll
