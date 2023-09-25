@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj": {}
+    "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj": {}
   },
   "projects": {
-    "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj": {
+    "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj",
+        "projectUniqueName": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj",
         "projectName": "LINQSamples.DataLayer",
-        "projectPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj",
+        "projectPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj",
         "packagesPath": "C:\\Users\\diall\\.nuget\\packages\\",
-        "outputPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\obj\\",
+        "outputPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

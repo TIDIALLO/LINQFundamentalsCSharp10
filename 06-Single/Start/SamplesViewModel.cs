@@ -15,17 +15,12 @@
       Product value = null;
 
       // Write Query Syntax Here
-      try
-      {
-        value = (from prod in products select prod).First(prod => prod.Color == "Reed");
 
-      }
-      catch (InvalidOperationException ex)
-      {
-        Console.WriteLine(ex.Message);
-        throw;
-      }
-      // Test the exception handling
+      value = (from prod in products select prod).First(prod => prod.Color == "Reed");
+      //value = (from prod in products
+      //         select prod)
+      //         .First(prod => prod.Color == "purple");
+
 
       return value;
     }
@@ -44,7 +39,7 @@
       Product value = null;
 
       // Write Method Syntax Here
-      value = (products.First(p => p.Color == "Red")); 
+      value = (products.First(p => p.Color == "Red"));
       return value;
     }
     #endregion
@@ -62,9 +57,17 @@
       Product value = null;
 
       // Write Query Syntax Here
+      // value = (from prod in products select prod)
+      //   .FirstOrDefault(prod => prod.Color == "Red",
+
+      value = (from prod in products select prod)
+        .FirstOrDefault(prod => prod.Color == "purple",
+        new Product { ProductID = -1, Name = "NOT fOUND" });
 
       // Test the exception handling
-
+      //value = (from prod in products
+      //         select prod)
+      //         .FirstOrDefault(prod => prod.Color == "purple");
       return value;
     }
     #endregion
@@ -82,6 +85,8 @@
       Product value = null;
 
       // Write Method Syntax Here
+      value = products.FirstOrDefault(p => p.Color == "Red",
+        new Product { ProductID = -1, Name = "NOT fOUND" });
 
       return value;
     }
@@ -136,7 +141,7 @@
       Product value = null;
 
       // Write Query Syntax Here
-
+      value = (from p in products select p).Last(p => p.Color == "Red");
       // Test the exception handling
 
       return value;
@@ -154,6 +159,7 @@
       Product value = null;
 
       // Write Method Syntax Here
+      value = products.Last(p => p.Color == "Red");
 
 
       return value;
@@ -171,9 +177,15 @@
       Product value = null;
 
       // Write Query Syntax Here
-
+      // value = (from prod in products select prod)
+      //   .LastOrDefault(prod => prod.Color == "Red",
+      //   new Product { ProductID = -1, Name = "NOT fOUND" });
 
       // Test the exception handling
+
+      value = (from prod in products select prod)
+       .LastOrDefault(prod => prod.Color == "purple",
+        new Product { ProductID = -1, Name = "NOT fOUND" });
 
       return value;
     }
@@ -190,7 +202,7 @@
       Product value = null;
 
       // Write Method Syntax Here
-
+      value = products.LastOrDefault(p => p.Color == "Red");
 
       return value;
     }
@@ -208,10 +220,15 @@
       Product value = null;
 
       // Write Query Syntax Here
+      //value = (from p in products select p).Single(p => p.ProductID == 706);
 
+      // Test the exception handling
+      // value = (from p in products select p).Single(p => p.Color == "Red");
       // Test the exception handling for finding multiple values
 
       // Test the exception handling for the list is null
+      products = null;
+      value = (from p in products select p).Single(p => p.Color == "Red");
 
       return value;
     }
@@ -246,14 +263,23 @@
       Product value = null;
 
       // Write Query Syntax Here
-
+      // value = (from p in products select p).SingleOrDefault(p => p.ProductID == 706);
 
       // Test the exception handling for finding multiple values
+      // value = (from p in products select p).SingleOrDefault(p => p.Color == "Red");
 
 
       // Test the exception handling for the list is empty
+      // products.Clear();
+      // value = (from p in products select p).SingleOrDefault(p => p.ProductID == 706);
+
 
       // Test the exception handling for the list is empty and a default value is supplied
+      value = (from p in products select p)
+        .SingleOrDefault(p => p.ProductID == 706,
+         new Product { ProductID = -1, Name = "NO Product inn the list" });
+
+
 
       // Test the exception handling for the list is null
 
@@ -274,6 +300,7 @@
       Product value = null;
 
       // Write Method Syntax Here
+      value = products.SingleOrDefault(p => p.ProductID == 706);
 
 
       return value;

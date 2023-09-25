@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Start\\LINQSamples.csproj": {}
+    "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Finish\\LINQSamples.csproj": {}
   },
   "projects": {
-    "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Start\\LINQSamples.csproj": {
+    "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Finish\\LINQSamples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Start\\LINQSamples.csproj",
+        "projectUniqueName": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Finish\\LINQSamples.csproj",
         "projectName": "LINQSamples",
-        "projectPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Start\\LINQSamples.csproj",
+        "projectPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Finish\\LINQSamples.csproj",
         "packagesPath": "C:\\Users\\diall\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Start\\obj\\",
+        "outputPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\06-Single\\Finish\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj": {
-                "projectPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj"
+              "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj": {
+                "projectPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj"
               },
               "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj": {
                 "projectPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj"
@@ -89,14 +89,14 @@
         }
       }
     },
-    "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj": {
+    "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj",
+        "projectUniqueName": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj",
         "projectName": "LINQSamples.Common",
-        "projectPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj",
+        "projectPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\LINQSamples.Common.csproj",
         "packagesPath": "C:\\Users\\diall\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\obj\\",
+        "outputPath": "d:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

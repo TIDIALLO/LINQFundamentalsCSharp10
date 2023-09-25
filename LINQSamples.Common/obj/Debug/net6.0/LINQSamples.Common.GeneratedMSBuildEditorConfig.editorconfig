@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LINQSamples.Common
-build_property.ProjectDir = d:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.Common\
+build_property.ProjectDir = D:\dev\dotnet\c#-10\intermediaire\LINQ fundamentals C#\LINQSamples.Common\
