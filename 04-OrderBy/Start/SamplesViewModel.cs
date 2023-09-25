@@ -75,12 +75,14 @@
     /// Order products by Color descending, then Name
     /// </summary>
     public List<Product> OrderByTwoFieldsQuery()
-    {
+    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
       List<Product> products = GetProducts();
       List<Product> list = new();
 
       // Write Query Syntax Here
-
+      list = (from p in products
+              orderby p.Color descending , p.Name ascending
+              select p).ToList();
 
       return list;
     }
@@ -96,7 +98,8 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-
+      list= products.OrderByDescending(
+        p => p.Color).ThenBy(p => p.Name).ToList(); 
 
       return list;
     }
