@@ -115,7 +115,8 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-
+      list= products.OrderByDescending(
+        p => p.Color).ThenByDescending(p => p.Name).ToList(); 
 
       return list;
     }
