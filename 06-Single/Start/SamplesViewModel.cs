@@ -15,7 +15,16 @@
       Product value = null;
 
       // Write Query Syntax Here
+      try
+      {
+        value = (from prod in products select prod).First(prod => prod.Color == "Reed");
 
+      }
+      catch (InvalidOperationException ex)
+      {
+        Console.WriteLine(ex.Message);
+        throw;
+      }
       // Test the exception handling
 
       return value;
@@ -35,7 +44,7 @@
       Product value = null;
 
       // Write Method Syntax Here
-      
+      value = (products.First(p => p.Color == "Red")); 
       return value;
     }
     #endregion
@@ -91,9 +100,9 @@
       Product value = null;
 
       // Write Query Syntax Here
-     
+
       // Test the exception handling
-      
+
       return value;
     }
     #endregion
@@ -127,9 +136,9 @@
       Product value = null;
 
       // Write Query Syntax Here
-      
+
       // Test the exception handling
-      
+
       return value;
     }
     #endregion
@@ -145,7 +154,7 @@
       Product value = null;
 
       // Write Method Syntax Here
-      
+
 
       return value;
     }
@@ -162,10 +171,10 @@
       Product value = null;
 
       // Write Query Syntax Here
-     
+
 
       // Test the exception handling
-     
+
       return value;
     }
     #endregion
@@ -181,7 +190,7 @@
       Product value = null;
 
       // Write Method Syntax Here
-      
+
 
       return value;
     }
@@ -247,7 +256,7 @@
       // Test the exception handling for the list is empty and a default value is supplied
 
       // Test the exception handling for the list is null
-     
+
 
       return value;
     }
@@ -265,7 +274,7 @@
       Product value = null;
 
       // Write Method Syntax Here
-      
+
 
       return value;
     }
