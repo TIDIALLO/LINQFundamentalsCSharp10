@@ -152,10 +152,9 @@ public class SamplesViewModel : ViewModelBase
   {
     List<Product> products = GetProducts();
     StringBuilder sb = new(2048);
-
+            
         // Write Method Syntax Here
-        var list = (from prod in products
-                    select new
+        var list = products.Select(prod =>new
                     {
                         Identifier = prod.ProductID,
                         ProductName = prod.Name,
@@ -164,12 +163,12 @@ public class SamplesViewModel : ViewModelBase
                       );
 
         // Loop through anonymous class
-        //foreach (var prod in list)
-        //{
-        //  sb.AppendLine($"Product ID: {prod.Identifier}");
-        //  sb.AppendLine($"   Product Name: {prod.ProductName}");
-        //  sb.AppendLine($"   Product Size: {prod.ProductSize}");
-        //}
+        foreach (var prod in list)
+        {
+          sb.AppendLine($"Product ID: {prod.Identifier}");
+          sb.AppendLine($"   Product Name: {prod.ProductName}");
+          sb.AppendLine($"   Product Size: {prod.ProductSize}");
+        }
 
         return sb.ToString();
   }

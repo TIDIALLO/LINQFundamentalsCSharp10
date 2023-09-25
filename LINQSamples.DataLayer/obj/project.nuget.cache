@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0+2jf0CxshzsltB5gHRelMfsn5p/Bsbv0aE2c8LK/C5/Zh01NT9ED9ACoRyFLSbBduoajwnndt2yosN0sDc4Hw==",
+  "dgSpecHash": "LOWKJPgQeoHcWH7+lAbZ7FnO1xj+tQCs1AhEsi/wNp0+vxJEcFwUCfWNfSq37pk8AY6a/uyboU86h8irAblU8A==",
   "success": true,
   "projectFilePath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
