@@ -46,7 +46,9 @@
       List<Product> list = new();
 
       // Write Query Syntax Here
-
+      list = (from prod in products
+              where prod.Name.StartsWith("L") && prod.StandardCost > 200
+              select prod).ToList();
 
       return list;
     }
@@ -62,6 +64,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
+      list = products.Where(prod => prod.Name.StartsWith("s") && prod.StandardCost > 200).ToList();
 
 
       return list;
