@@ -12,12 +12,9 @@ public class SamplesViewModel : ViewModelBase
   {
     List<Product> products = GetProducts();
     List<Product> list = new();
-    List<String> liststr = new();
-
 
     // Write Query Syntax Here
-    //list = (from pord in products select pord).ToList();
-    list = products.Select(prod => prod).ToList();
+    list = (from pord in products select pord).ToList();
 
     return list;
   }
@@ -33,6 +30,7 @@ public class SamplesViewModel : ViewModelBase
     List<Product> list = new();
 
     // Write Method Syntax Here
+    list = products.Select(prod => prod).ToList();
 
 
     return list;
@@ -82,7 +80,13 @@ public class SamplesViewModel : ViewModelBase
     List<Product> list = new();
 
     // Write Query Syntax Here
-
+    list = (from product in products
+            select new Product
+            {
+              ProductID = product.ProductID,
+              Name = product.Name,
+              Size = product.Size
+            }).ToList();
 
     return list;
   }
@@ -98,14 +102,13 @@ public class SamplesViewModel : ViewModelBase
     List<Product> list = new();
 
     // Write Method Syntax Here
-    list = (from prod in products
-            select
-          new Product
-          {
-            ProductID = prod.ProductID,
-            Name = prod.Name,
-            Size = prod.Size,
-          }
+    list = products.Select(prod =>
+           new Product
+           {
+             ProductID = prod.ProductID,
+             Name = prod.Name,
+             Size = prod.Size,
+           }
           ).ToList();
 
     return list;
@@ -121,26 +124,26 @@ public class SamplesViewModel : ViewModelBase
     List<Product> products = GetProducts();
     StringBuilder sb = new(2048);
 
-        // Write Query Syntax Here
-        var list = (from prod in products
-                    select new
-                        {
-                            Identifier = prod.ProductID,
-                        ProductName = prod.Name,
-                            ProductSize = prod.Size,
-                        }
-                    );
+    // Write Query Syntax Here
+    var list = (from prod in products
+                select new
+                {
+                  Identifier = prod.ProductID,
+                  ProductName = prod.Name,
+                  ProductSize = prod.Size,
+                }
+                );
 
 
-        // Loop through anonymous class
-        foreach (var prod in list)
-        {
-          sb.AppendLine($"Product ID: {prod.Identifier}");
-          sb.AppendLine($"   Product Name: {prod.ProductName}");
-          sb.AppendLine($"   Product Size: {prod.ProductSize}");
-        }
+    // Loop through anonymous class
+    foreach (var prod in list)
+    {
+      sb.AppendLine($"Product ID: {prod.Identifier}");
+      sb.AppendLine($"   Product Name: {prod.ProductName}");
+      sb.AppendLine($"   Product Size: {prod.ProductSize}");
+    }
 
-        return sb.ToString();
+    return sb.ToString();
   }
   #endregion
 
@@ -152,25 +155,25 @@ public class SamplesViewModel : ViewModelBase
   {
     List<Product> products = GetProducts();
     StringBuilder sb = new(2048);
-            
-        // Write Method Syntax Here
-        var list = products.Select(prod =>new
-                    {
-                        Identifier = prod.ProductID,
-                        ProductName = prod.Name,
-                        ProductSize = prod.Size,
-                    }
-                      );
 
-        // Loop through anonymous class
-        foreach (var prod in list)
-        {
-          sb.AppendLine($"Product ID: {prod.Identifier}");
-          sb.AppendLine($"   Product Name: {prod.ProductName}");
-          sb.AppendLine($"   Product Size: {prod.ProductSize}");
-        }
+    // Write Method Syntax Here
+    var list = products.Select(prod => new
+    {
+      Identifier = prod.ProductID,
+      ProductName = prod.Name,
+      ProductSize = prod.Size,
+    }
+                  );
 
-        return sb.ToString();
+    // Loop through anonymous class
+    foreach (var prod in list)
+    {
+      sb.AppendLine($"Product ID: {prod.Identifier}");
+      sb.AppendLine($"   Product Name: {prod.ProductName}");
+      sb.AppendLine($"   Product Size: {prod.ProductSize}");
+    }
+
+    return sb.ToString();
   }
   #endregion
 }
