@@ -12,7 +12,9 @@
       List<Product> list = new();
 
       // Write Query Syntax Here
-      
+      list = (from p in products
+              orderby p.Name
+              select p).ToList();
 
       return list;
     }
@@ -28,7 +30,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-     
+      list = products.OrderBy(prod => prod.Name).ToList();
 
       return list;
     }
@@ -44,7 +46,7 @@
       List<Product> list = new();
 
       // Write Query Syntax Here
-    
+
 
       return list;
     }
@@ -60,7 +62,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-      
+
 
       return list;
     }
@@ -76,7 +78,7 @@
       List<Product> list = new();
 
       // Write Query Syntax Here
-     
+
 
       return list;
     }
@@ -92,7 +94,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-     
+
 
       return list;
     }
@@ -108,7 +110,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-      
+
 
       return list;
     }
