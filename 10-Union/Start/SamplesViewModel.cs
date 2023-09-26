@@ -16,6 +16,10 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
+      list = (from num in list1 select num)
+        .Union(list2)
+        .OrderBy(num => num)
+        .ToList();
 
 
       return list;
@@ -36,6 +40,7 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
+      list = list1.Union(list2).OrderBy(num => num).ToList();
      
 
       return list;
@@ -49,7 +54,7 @@
     /// </summary>
     public List<Product> UnionQuery()
     {
-      List<Product> list = null;
+      List<Product> list = null;  
       ProductComparer pc = new();
       // Load all Product Data
       List<Product> list1 = ProductRepository.GetAll();
@@ -57,6 +62,10 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Query Syntax Here
+      list = (from p1 in list1 select p1)
+       .Union(list2, pc)
+       .OrderBy(p1 => p1.Name)
+       .ToList();
      
 
       return list;
@@ -78,6 +87,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Method Syntax Here
+      list = list1.Union(list2, pc).OrderBy(p1 => p1.Name).ToList();
       
 
       return list;
@@ -97,6 +107,10 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Query Syntax Here
+      list = (from p1 in list1 select p1)
+      .UnionBy(list2, p1 => p1.Color)
+      .OrderBy(p1 => p1.Color)
+      .ToList();
       
 
       return list;
@@ -116,6 +130,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Method Syntax Here
+      list = list1.UnionBy(list2, p1 => p1.Color).OrderBy(p1 => p1.Color).ToList();
       
 
       return list;
@@ -136,6 +151,10 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
+      list = (from i in list select i)
+      .Concat(list2)
+      .OrderBy(i => i)
+      .ToList();
       
 
       return list;
@@ -156,6 +175,7 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
+      list = list1.Concat(list2).OrderBy(i => i).ToList();
       
 
       return list;
@@ -176,6 +196,9 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Query Syntax Here
+      list = (from prod in list1 select prod)
+              .Concat(list2)
+              .ToList();
       
 
       return list;
@@ -196,6 +219,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Method Syntax Here
+      list = list1.Concat(list2).ToList();
       
 
       return list;
