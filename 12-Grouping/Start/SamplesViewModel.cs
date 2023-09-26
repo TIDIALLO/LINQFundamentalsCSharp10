@@ -13,6 +13,9 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
+      list = (from prod in products
+              orderby prod.Size
+              group prod by prod.Size).ToList();
 
       return list;
     }
@@ -29,7 +32,8 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      list = products.GroupBy(p => p.Size).OrderBy(p => p.Key).ToList();
+
 
       return list;
     }
@@ -46,7 +50,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+
 
       return list;
     }
@@ -63,8 +67,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
-
+      list = (from prod in products
+              group prod by prod.Size into sizes
+              orderby sizes.Key
+              select sizes).ToList();
       return list;
     }
     #endregion
@@ -80,9 +86,13 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-     
-
+      list = products.GroupBy(
+              p => p.Size)
+              .OrderBy(s => s.Key)
+              .Select(s => s)
+              .ToList();
       return list;
+
     }
     #endregion
 
@@ -98,8 +108,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
-
+      list = (from prod in products
+              group prod by prod.Size into sizes
+              where sizes.Count() > 2
+              select sizes).ToList();
       return list;
     }
     #endregion
@@ -116,7 +128,12 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      list = products.GroupBy(
+              p => p.Size)
+             .Where(s => s.Count() > 2)
+             .Select(s => s)
+             .ToList();
+
 
       return list;
     }
@@ -135,7 +152,18 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from sale in sales
+              orderby sale.SalesOrderID
+              group sale by sale.SalesOrderID into newSales
+              select new SaleProducts
+              {
+                SalesOrderID = newSales.Key,
+                Products = (from prod in products
+                orderby prod.ProductID
+                join sale in sales on prod.ProductID equals sale.ProductID
+                where sale.SalesOrderID == newSales.Key
+                select prod).ToList()
+              }).ToList();
 
       return list;
     }
@@ -154,7 +182,15 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      list = sales.GroupBy(
+              s => s.SalesOrderID)
+            .Select(s => new SaleProducts
+              {
+                SalesOrderID = s.Key,
+                Products = products.Where(p => p.ProductID == s.Key).ToList()
+              })
+            .ToList();
+
 
       return list;
     }
@@ -172,7 +208,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from prod in products
+              group prod by prod.Color into groupColors
+              select groupColors.FirstOrDefault().Color).ToList();
+
       return list;
     }
     #endregion
@@ -184,13 +223,14 @@
     /// </summary>
     public List<string> GroupByDistinctMethod()
     {
-      List<string> list =null;
+      List<string> list = null;
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
-
+      list = products.GroupBy(p => p.Color)
+      .Select(groupedColors => groupedColors.FirstOrDefault().Color)
+      .OrderBy(c => c).ToList();
       return list;
     }
     #endregion
