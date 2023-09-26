@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "4BLPr2/0M68xJDE2vTwbuVK2o6A2YZNPI2js+41JLa3TCrZJcR7vZOSMP+srrXBIhJO7fpqtudKPzdK2yFSQeA==",
+  "success": true,
+  "projectFilePath": "D:\\dev\\dotnet\\c#-10\\intermediaire\\LINQ fundamentals C#\\14-Iterate\\Start\\LINQSamples.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\diall\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
