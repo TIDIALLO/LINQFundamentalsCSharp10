@@ -10,5 +10,7 @@
       "path": "..\\..\\LINQSamples.DataLayer"
     }
   ],
-  "settings": {}
+  "settings": {
+    "powershell.cwd": "Start"
+  }
 }
