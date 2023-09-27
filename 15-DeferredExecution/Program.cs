@@ -4,7 +4,7 @@
 SamplesViewModel vm = new();
 
 // Call Sample Method
-var result = vm.DeferredExecution();
+var result = vm.UsingYield();
 
 // Display Results
 vm.Display(result);

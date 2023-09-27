@@ -9,7 +9,7 @@
       {
         new ProductSimple {
           Name = "Sport-100 Helmet",
-          Color = "Red"
+          Color = "White"
         },
         new ProductSimple {
           Name = "Road Frame",
